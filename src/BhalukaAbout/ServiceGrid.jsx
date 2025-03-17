@@ -13,16 +13,13 @@ const ServiceGrid = () => {
         { name: <Link to="/Bhaluka_Upazila" style={{ textDecoration: 'none', color: 'inherit' }} >উপজেলা</Link>, icon: <FaBuilding style={{ color: '#007bff', fontSize: '3rem' }} /> },
         { name: <Link to="/ValukaMunicipality" style={{ textDecoration: 'none', color: 'inherit' }}>পৌরসভা </Link>, icon: <FaUsers style={{ color: '#17a2b8', fontSize: '3rem' }} /> },
         { name: <Link to="/Union" style={{ textDecoration: 'none', color: 'inherit' }} >উপজেলা</Link>, icon: <FaCity style={{ color: '#28a745', fontSize: '3rem' }} /> },
-        { name: <Link to="/upazila" style={{ textDecoration: 'none', color: 'inherit' }} >উপজেলা</Link>, icon: <FaSitemap style={{ color: '#ffc107', fontSize: '3rem' }} /> },
-        { name: <Link to="/upazila" style={{ textDecoration: 'none', color: 'inherit' }} >উপজেলা</Link>, icon: <FaSitemap style={{ color: '#ffc107', fontSize: '3rem' }} /> },
-        { name: <Link to="/upazila" style={{ textDecoration: 'none', color: 'inherit' }} >উপজেলা</Link>, icon: <FaSitemap style={{ color: '#ffc107', fontSize: '3rem' }} /> },
       ],
     },
     {
       category: 'জরুরি সেবা',
       items: [
         { name: <Link to="/upazila" style={{ textDecoration: 'none', color: 'inherit' }} >ফায়ার সার্ভিস</Link>, icon: <FaFire style={{ color: '#dc3545', fontSize: '3rem' }} /> },
-        { name: <Link to="/ProfileCardGrid" style={{ textDecoration: 'none', color: 'inherit' }} >থানা পুলিশ</Link>, icon: <FaShieldAlt style={{ color: '#343a40', fontSize: '3rem' }} /> },
+        { name: <Link to="/ProfileCardGrid" style={{ textDecoration: 'none', color: 'inherit' }} >থানা পুলিশ/ ফাড়ী </Link>, icon: <FaShieldAlt style={{ color: '#343a40', fontSize: '3rem' }} /> },
         { name: <Link to="/upazila" style={{ textDecoration: 'none', color: 'inherit' }} >উপজেলা প্রশাসন</Link>, icon: <FaUsers style={{ color: '#17a2b8', fontSize: '3rem' }} /> },
       ],
     },
@@ -41,7 +38,7 @@ const ServiceGrid = () => {
     <div className="container">
       {services.map((serviceCategory, index) => (
         <div key={index} className="mb-5">
-          <h2 style={{ color: '#007bff', fontSize: '1.75rem', marginBottom: '.5rem', textAlign: 'center' }}>
+          <h2 style={{ color: '#007bff', fontSize: '1.75rem', marginBottom: '1rem', textAlign: 'center' }}>
             {serviceCategory.category}
           </h2>
           <div className="row">
@@ -50,19 +47,22 @@ const ServiceGrid = () => {
                 <div
                   className="card text-center"
                   style={{
-                    border: 'none',
+                    border: '1px solid green',
                     borderRadius: '15px',
                     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
                     transition: 'transform 0.3s ease-in-out',
                     padding: '2px',
                     marginBottom: '13px',
+                    
                   }}
                   onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
                   onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
                 >
                   <div className="card-body">
-                    <div style={{ fontSize: '.3rem', marginBottom: '5px' }}>{item.icon}</div>
-                    <h5 style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#343a40' }}>{item.name}</h5>
+
+                  <div style={{ fontSize: '.2rem',  }}>{item.icon}</div>
+                  <h5 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#343a40', }}>{item.name}</h5>
+
                   </div>
                 </div>
               </div>
