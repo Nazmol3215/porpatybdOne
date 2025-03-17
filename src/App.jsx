@@ -15,7 +15,7 @@ import Union from "./BhalukaAbout/Union";
 import ProfileCardGrid from "./police/police";
 import Doctors_Valukka from "./BhalukaAbout/Doctors_Valukka";
 import Ambulance from "./BhalukaAbout/Ambulance";
-import Famous_person from "./BhalukaAbout/famous_person";
+import Famous_person from "./BhalukaAbout/Famous_person";
 
 
 
