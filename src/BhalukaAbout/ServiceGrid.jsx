@@ -19,7 +19,7 @@ const ServiceGrid = () => {
       category: 'জরুরি সেবা',
       items: [
         { name: <Link to="/upazila" style={{ textDecoration: 'none', color: 'inherit' }} >ফায়ার সার্ভিস</Link>, icon: <FaFire style={{ color: '#dc3545', fontSize: '3rem' }} /> },
-        { name: <Link to="/ProfileCardGrid" style={{ textDecoration: 'none', color: 'inherit' }} >থানা পুলিশ/ ফাড়ী </Link>, icon: <FaShieldAlt style={{ color: '#343a40', fontSize: '3rem' }} /> },
+        { name: <Link to="/ProfileCardGrid" style={{ textDecoration: 'none', color: 'inherit' }} >থানা পুলিশ </Link>, icon: <FaShieldAlt style={{ color: '#343a40', fontSize: '3rem' }} /> },
         { name: <Link to="/upazila" style={{ textDecoration: 'none', color: 'inherit' }} >উপজেলা প্রশাসন</Link>, icon: <FaUsers style={{ color: '#17a2b8', fontSize: '3rem' }} /> },
       ],
     },
@@ -27,7 +27,16 @@ const ServiceGrid = () => {
       category: 'স্বাস্থ্য সেবা',
       items: [
 
-        { name: <Link to="/Doctors_Valukka" style={{ textDecoration: 'none', color: 'inherit' }}>ডাক্তার</Link>, icon: <FaUserMd style={{ color: '#6f42c1', fontSize: '3rem' }} /> },
+        { name: <Link to="/Doctors_Valukka" style={{ textDecoration: 'none', color: 'inherit' }}>ডাক্তার নার্স</Link>, icon: <FaUserMd style={{ color: '#6f42c1', fontSize: '3rem' }} /> },
+        { name: <Link to="/Ambulance" style={{ textDecoration: 'none', color: 'inherit' }} >এ্যাম্বুলেন্স</Link>, icon: <FaAmbulance style={{ color: '#ff6347', fontSize: '3rem' }} /> },
+        { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link>, icon: <FaHospital style={{ color: '#20c997', fontSize: '3rem' }} /> },
+      ],
+    },
+    {
+      category: 'স্বাস্থ্য সেবা',
+      items: [
+
+        { name: <Link to="/HospitalList" style={{ textDecoration: 'none', color: 'inherit' }}>হাসপাতাল</Link>, icon: <FaUserMd style={{ color: '#6f42c1', fontSize: '3rem' }} /> },
         { name: <Link to="/Ambulance" style={{ textDecoration: 'none', color: 'inherit' }} >এ্যাম্বুলেন্স</Link>, icon: <FaAmbulance style={{ color: '#ff6347', fontSize: '3rem' }} /> },
         { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link>, icon: <FaHospital style={{ color: '#20c997', fontSize: '3rem' }} /> },
       ],
@@ -60,8 +69,8 @@ const ServiceGrid = () => {
                 >
                   <div className="card-body">
 
-                  <div style={{ fontSize: '.2rem',  }}>{item.icon}</div>
-                  <h5 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#343a40', }}>{item.name}</h5>
+                  <div style={{ fontSize: '.4rem',  }}>{item.icon}</div>
+                  <h5 style={{ fontSize: '12px', fontWeight: 'bold', color: '#343a40', }}>{item.name}</h5>
 
                   </div>
                 </div>

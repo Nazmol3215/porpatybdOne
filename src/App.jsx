@@ -16,8 +16,7 @@ import ProfileCardGrid from "./police/police";
 import Doctors_Valukka from "./BhalukaAbout/Doctors_Valukka";
 import Ambulance from "./BhalukaAbout/Ambulance";
 import Famous_person from "./BhalukaAbout/Famous_person";
-
-
+import HospitalList from "./BhalukaAbout/Hospitals_Bhaluka";
 
 
 export default function Router() {
@@ -44,6 +43,7 @@ export default function Router() {
       <Route path="/Doctors_Valukka" element={<Doctors_Valukka />} />
       <Route path="/Ambulance" element={<Ambulance />} />
       <Route path="/Famous_person" element={<Famous_person />} />
+      <Route path="/HospitalList" element={<HospitalList />} />
       
     </Routes>
   </BrowserRouter>
