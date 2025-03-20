@@ -37,7 +37,7 @@ const Details = () => {
 
   const iconStyle = {
     marginRight: '10px',
-    fontSize: '1.2rem',
+    fontSize: '1..9rem',
   };
 
   return (

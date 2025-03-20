@@ -13,12 +13,16 @@ import ServiceGrid from "../BhalukaAbout/ServiceGrid";
 
 
 
+
 export default function Home() {
   return (
     <div>
       <OffcanvasExample />
       <HorizontalScrollMenu />
       <ScrollingText />
+
+
+
       <ServiceGrid />
       {/* <PropertySlider /> */}
       {/* <Neighborhoods1/> */}

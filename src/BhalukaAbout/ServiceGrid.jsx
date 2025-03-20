@@ -41,6 +41,33 @@ const ServiceGrid = () => {
         { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link>, icon: <FaHospital style={{ color: '#20c997', fontSize: '3rem' }} /> },
       ],
     },
+    {
+      category: 'স্বাস্থ্য সেবা',
+      items: [
+
+        { name: <Link to="/UpazilaAdmin" style={{ textDecoration: 'none', color: 'inherit' }}>উপজেলা প্রশাসন</Link>, icon: <FaUserMd style={{ color: '#6f42c1', fontSize: '3rem' }} /> },
+        { name: <Link to="/JournalistsList" style={{ textDecoration: 'none', color: 'inherit' }} >সাংবাদিকগন</Link>, icon: <FaAmbulance style={{ color: '#ff6347', fontSize: '3rem' }} /> },
+        { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link>, icon: <FaHospital style={{ color: '#20c997', fontSize: '3rem' }} /> },
+      ],
+    },
+    {
+      category: 'স্বাস্থ্য সেবা',
+      items: [
+
+        { name: <Link to="/UpazilaAdmin" style={{ textDecoration: 'none', color: 'inherit' }}>উপজেলা প্রশাসন</Link>, icon: <FaUserMd style={{ color: '#6f42c1', fontSize: '3rem' }} /> },
+        { name: <Link to="/JournalistsList" style={{ textDecoration: 'none', color: 'inherit' }} >সাংবাদিকগন</Link>, icon: <FaAmbulance style={{ color: '#ff6347', fontSize: '3rem' }} /> },
+        { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link>, icon: <FaHospital style={{ color: '#20c997', fontSize: '3rem' }} /> },
+      ],
+    },
+    {
+      category: 'স্বাস্থ্য সেবা',
+      items: [
+
+        { name: <Link to="/UpazilaAdmin" style={{ textDecoration: 'none', color: 'inherit' }}>উপজেলা প্রশাসন</Link>, icon: <FaUserMd style={{ color: '#6f42c1', fontSize: '3rem' }} /> },
+        { name: <Link to="/JournalistsList" style={{ textDecoration: 'none', color: 'inherit' }} >সাংবাদিকগন</Link>, icon: <FaAmbulance style={{ color: '#ff6347', fontSize: '3rem' }} /> },
+        { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link>, icon: <FaHospital style={{ color: '#20c997', fontSize: '3rem' }} /> },
+      ],
+    },
   ];
 
   return (

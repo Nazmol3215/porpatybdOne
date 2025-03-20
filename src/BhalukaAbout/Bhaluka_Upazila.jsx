@@ -94,7 +94,7 @@ const Bhaluka_Upazila = () => {
   };
 
   const headerStyle = {
-    fontSize: '2rem',
+    fontSize: '.9rem',
     color: '#333',
     marginBottom: '10px',
     textAlign: 'center',
@@ -114,7 +114,7 @@ const Bhaluka_Upazila = () => {
   };
 
   const accordionHeaderStyle = {
-    fontSize: '1.2rem',
+    fontSize: '1..9rem',
     fontWeight: 'bold',
     padding: '5px',
     backgroundColor: '#4caf50',

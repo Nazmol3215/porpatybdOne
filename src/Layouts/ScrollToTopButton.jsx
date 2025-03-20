@@ -38,7 +38,7 @@ const ScrollToTopButton = () => {
           style={{
             position: 'fixed',
             bottom: '1rem',
-            right: '1.2rem',
+            right: '1..9rem',
             padding: '1.3rem',
             fontSize: '1.rem',
             borderRadius: '100%',

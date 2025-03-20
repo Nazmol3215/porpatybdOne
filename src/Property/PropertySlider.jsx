@@ -56,7 +56,7 @@ const PropertySlider = () => {
           left: '10px',
           background: 'none',
           border: 'none',
-          fontSize: '2rem',
+          fontSize: '.9rem',
           cursor: 'pointer',
           transform: 'translateY(-50%)',
         }}
@@ -90,7 +90,7 @@ const PropertySlider = () => {
           right: '10px',
           background: 'none',
           border: 'none',
-          fontSize: '2rem',
+          fontSize: '.9rem',
           cursor: 'pointer',
           transform: 'translateY(-50%)',
         }}
