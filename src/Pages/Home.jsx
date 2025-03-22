@@ -3,7 +3,6 @@ import PropertyList from "../Property/PropertyList";
 // import PropertySlider from "../Property/PropertySlider";
 import OffcanvasExample from "../Layout/OffcanvasExample";
 import Footer from "../Layout/Footer";
-import HorizontalScrollMenu from "../Layout/ScrollHeader";
 // import Neighborhoods1 from "../FirstPages/Neighborhoods1";
 import ScrollingText from "../FirstPages/ScrollingText";
 import One from "../TrendingAndRecommended/One";
@@ -18,7 +17,6 @@ export default function Home() {
   return (
     <div>
       <OffcanvasExample />
-      <HorizontalScrollMenu />
       <ScrollingText />
 
 

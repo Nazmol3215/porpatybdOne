@@ -1,5 +1,5 @@
 import React from 'react';
-import Bhaluka_Upazila from './Bhaluka_Upazila';
+import Fire_service from './Fire_service';
 import Footer from '../Layout/Footer';
 import OffcanvasExample from '../Layout/OffcanvasExample';
 
@@ -7,13 +7,12 @@ import OffcanvasExample from '../Layout/OffcanvasExample';
 
 
 
-export default function Bhaluka_Upazila_1() {
+export default function Fire_service_1() {
     return (
         <div>
             <OffcanvasExample />
-            <Bhaluka_Upazila />
+            <Fire_service />
             <Footer />
         </div>
     )
 }
-
