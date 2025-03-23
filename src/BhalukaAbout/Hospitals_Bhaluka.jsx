@@ -1,40 +1,31 @@
 import React, { useState } from "react";
 
-
 // Hospital data array
 const hospitals = [
   {
     name: "ভালুকা সরকারি হাসপাতাল",
-    rating: 3.9,
-    ratingsCount: 109,
     claimed: true,
-    location: " ভালুকার পশ্চিমের রাস্তার উপরের ব্রীজ থেকে পাচ’শ গজ সামনে।  ভালুকা, ময়মনসিংহ 01733-338905",
+    location: "ভালুকার পশ্চিমের রাস্তার উপরের ব্রীজ থেকে পাচ’শ গজ সামনে। ভালুকা, ময়মনসিংহ 01733-338905",
     yearsInHealthcare: 9,
     photos: [
       { label: "All", src: "hos.png" },
       { label: "Interior", src: "hos1.png" },
     ],
     services: ["General Surgery", "Orthopedics", "Pediatrics", "Cardiology"],
-    reviews: "Rated 3.9 stars by 109 people. Read patient reviews here.",
   },
   {
     name: "বন্ধন হাসপাতাল",
-    rating: 4.2,
-    ratingsCount: 150,
     claimed: true,
-    location: " জালাল ভিলা, সরকারি হাসপাতাল রোড ভালুকা। আধুনিক স্বাস্থ্য সেবার প্রতিশ্রুতি বন্ধন হাসপাতাল, 01710-991127",
+    location: "জালাল ভিলা, সরকারি হাসপাতাল রোড ভালুকা। আধুনিক স্বাস্থ্য সেবার প্রতিশ্রুতি বন্ধন হাসপাতাল,   01710-991127",
     yearsInHealthcare: 12,
     photos: [
       { label: "All", src: "hos1.png" },
       { label: "Interior", src: "hos4.png" },
     ],
     services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
   },
   {
     name: "মাস্টার হাসপাতা",
-    rating: 4.2,
-    ratingsCount: 150,
     claimed: true,
     location: "ভালুকা বাজার রোড ন্যাশনাল ব্যাংকের উপরতলা। মোবাইল: 01731-211120",
     yearsInHealthcare: 12,
@@ -43,110 +34,86 @@ const hospitals = [
       { label: "Interior", src: "hos1.png" },
     ],
     services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
   },
   {
     name: "লিলি এন্ড তাজ ডেন্টাল সার্জারী",
-    rating: 4.2,
-    ratingsCount: 150,
     claimed: true,
-    location: "১৯২/২ বাইতুসসাফ লিলি ভিলা হাই স্কুল রোড ভালুকা ময়মনসিংহ। মোবাইল: 01952-532442",
+    location: "১৯২/২ বাইতুসসাফ লিলি ভিলা হাই স্কুল রোড ভালুকা। মোবাইল: 01952-532442",
     yearsInHealthcare: 12,
     photos: [
       { label: "All", src: "hos2.png" },
       { label: "Interior", src: "hos1.png" },
     ],
     services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
   },
   {
     name: "ভালুকা ডিজিটাল হাসপাতাল।",
-    rating: 4.2,
-    ratingsCount: 150,
     claimed: true,
-    location: "Motihari Central, Motihari",
-    yearsInHealthcare: 12,
-    photos: [
-      { label: "All", src: "hos4.png" },
-      { label: "Interior", src: "hos1.png" },
-    ],
-    services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
-  },
-  {
-    name: " মাহির হাসপাতাল",
-    rating: 4.2,
-    ratingsCount: 150,
-    claimed: true,
-    location: "Motihari Central, Motihari",
-    yearsInHealthcare: 12,
-    photos: [
-      { label: "All", src: "hos4.png" },
-      { label: "Interior", src: "hos1.png " },
-    ],
-    services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
-  },
-  {
-    name: " মোহাম্মদীয়া মডেল হাসপাতাল",
-    rating: 4.2,
-    ratingsCount: 150,
-    claimed: true,
-    location: "Motihari Central, Motihari",
+    location: "ভালুকা বাজার রোড ",
     yearsInHealthcare: 12,
     photos: [
       { label: "All", src: "hos2.png" },
-      { label: "Interior", src: "hos4.png" },
+      { label: "Interior", src: "hos1.png" },
     ],
     services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
+  },
+  {
+    name: "মাহির হাসপাতাল",
+    claimed: true,
+    location: "ভালুকা বাজার রোড ",
+    yearsInHealthcare: 12,
+    photos: [
+      { label: "All", src: "hos2.png" },
+      { label: "Interior", src: "hos1.png" },
+    ],
+    services: ["Cardiology", "Neurology", "Dermatology"],
+  },
+  {
+    name: "মোহাম্মদীয়া মডেল হাসপাতাল।",
+    claimed: true,
+    location: "ভালুকা বাজার রোড ",
+    yearsInHealthcare: 12,
+    photos: [
+      { label: "All", src: "hos2.png" },
+      { label: "Interior", src: "hos1.png" },
+    ],
+    services: ["Cardiology", "Neurology", "Dermatology"],
   },
   {
     name: "ভালুকা জেনারেল হাসপাতাল",
-    rating: 4.2,
-    ratingsCount: 150,
     claimed: true,
-    location: "Motihari Central, Motihari",
+    location: "ভালুকা বাজার রোড ",
     yearsInHealthcare: 12,
     photos: [
       { label: "All", src: "hos2.png" },
-      { label: "Interior", src: "hos4.png" },
-    ],
-    services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
-  },
-  {
-    name: "সেবা হাসপাতাল",
-    rating: 4.2,
-    ratingsCount: 150,
-    claimed: true,
-    location: "Motihari Central, Motihari",
-    yearsInHealthcare: 12,
-    photos: [
-      { label: "All", src: "hos4.png" },
       { label: "Interior", src: "hos1.png" },
     ],
     services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
   },
   {
-    name: "ডক্টর ক্লিনিক",
-    rating: 4.2,
-    ratingsCount: 150,
+    name: "সেবা হাসপাতাল",
     claimed: true,
-    location: "Motihari Central, Motihari",
+    location: "ভালুকা বাজার রোড ",
     yearsInHealthcare: 12,
     photos: [
-      { label: "All", src: "hos1.png" },
-      { label: "Interior", src: "hos2.png" },
+      { label: "All", src: "hos2.png" },
+      { label: "Interior", src: "hos1.png" },
     ],
     services: ["Cardiology", "Neurology", "Dermatology"],
-    reviews: "Rated 4.2 stars by 150 people. Read patient reviews here.",
   },
- 
-  
-  // Add 8 more hospital objects in a similar way
-  // You can duplicate the existing objects and change the details for other hospitals
+  {
+    name: "ডক্টর ক্লিনি",
+    claimed: true,
+    location: "ভালুকা বাজার রোড ",
+    yearsInHealthcare: 12,
+    photos: [
+      { label: "All", src: "hos2.png" },
+      { label: "Interior", src: "hos1.png" },
+    ],
+    services: ["Cardiology", "Neurology", "Dermatology"],
+  },
+
+  // Add more hospitals here as needed...
 ];
 
 export default function HospitalList() {
@@ -193,13 +160,6 @@ export default function HospitalList() {
             </ul>
           </div>
         );
-      case "Reviews":
-        return (
-          <div style={{ marginBottom: "20px" }}>
-            <h2 style={styles.sectionTitle}>Reviews</h2>
-            <p style={styles.text}>{hospital.reviews}</p>
-          </div>
-        );
       default:
         return null;
     }
@@ -213,26 +173,16 @@ export default function HospitalList() {
           <div style={styles.header}>
             <h1 style={styles.title}>{hospital.name}</h1>
             <div style={styles.headerActions}>
-              <div style={styles.ratingBox}>
-                <span style={styles.rating}>{hospital.rating}</span>{" "}
-                <span>{hospital.ratingsCount} Ratings</span>
-                {hospital.claimed && <span style={styles.claimed}>Claimed</span>}
-              </div>
+              {hospital.claimed && <span style={styles.claimed}>Claimed</span>}
               <div style={styles.location}>
                 <span>{hospital.location}</span> • {hospital.yearsInHealthcare} Years in Healthcare
               </div>
             </div>
           </div>
 
-          <div style={styles.buttonGroup}>
-            <button style={styles.showNumberButton}>Show Number</button>
-            <button style={styles.enquireButton}>Enquire Now</button>
-            <button style={styles.whatsappButton}>WhatsApp</button>
-          </div>
-
           {/* Navigation Tabs */}
           <div style={styles.tabs}>
-            {["Overview", "Photos", "Services", "Reviews"].map((tab) => (
+            {["Overview", "Photos", "Services"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -261,7 +211,6 @@ const styles = {
     maxWidth: "800px",
     margin: "2px auto",
     padding: "10px",
-    fontFamily: "Arial, sans-serif",
   },
   hospitalCard: {
     marginBottom: "40px",
@@ -277,27 +226,18 @@ const styles = {
     marginBottom: "20px",
   },
   title: {
-    fontSize: "15px",
+    fontSize: "25px",
     fontWeight: "bold",
     padding: " 0 26px 0 0",
+    fontFamily: '"Galada", cursive',
+    fontWeight: 400,
+    fontStyle: 'normal',
+    color: '#344CB7',
   },
   headerActions: {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
-  },
-  ratingBox: {
-    display: "flex",
-    alignItems: "center",
-    gap: "5px",
-    backgroundColor: "#22C55E",
-    color: "#FFFFFF",
-    padding: "5px 10px",
-    borderRadius: "5px",
-  },
-  rating: {
-    fontSize: "18px",
-    fontWeight: "bold",
   },
   claimed: {
     fontSize: "12px",
@@ -307,42 +247,13 @@ const styles = {
     fontSize: "14px",
     marginTop: "5px",
   },
-  buttonGroup: {
-    display: "flex",
-    gap: "10px",
-    marginBottom: "20px",
-  },
-  showNumberButton: {
-    backgroundColor: "#16A34A",
-    color: "#FFFFFF",
-    padding: "10px 15px",
-    borderRadius: "5px",
-    border: "none",
-    cursor: "pointer",
-  },
-  enquireButton: {
-    backgroundColor: "#2563EB",
-    color: "#FFFFFF",
-    padding: "10px 15px",
-    borderRadius: "5px",
-    border: "none",
-    cursor: "pointer",
-  },
-  whatsappButton: {
-    backgroundColor: "#22C55E",
-    color: "#FFFFFF",
-    padding: "10px 15px",
-    borderRadius: "5px",
-    border: "none",
-    cursor: "pointer",
-  },
   tabs: {
     display: "flex",
     gap: "10px",
     marginBottom: "20px",
   },
   tabButton: {
-    padding: "10px 20px",
+    padding: "6px 10px",
     borderRadius: "5px",
     cursor: "pointer",
     border: "none",
@@ -381,10 +292,4 @@ const styles = {
     fontSize: "16px",
     marginBottom: "5px",
   },
-  name: {
-    fontSize: "6px",
-    marginBottom: "5px",
-  },
-
-
 };

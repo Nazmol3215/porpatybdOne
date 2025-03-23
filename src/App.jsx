@@ -26,7 +26,7 @@ import UpazilaAdmin_1 from "./BhalukaAbout/UpazilaAdmin_1";
 import Doctors_Valukka_1 from "./BhalukaAbout/Doctors_Valukka_1";
 import Ambulance_1 from "./BhalukaAbout/Ambulance_1";
 import Hospitals_Bhaluka_1 from "./BhalukaAbout/Hospitals_Bhaluka_1";
-import Lawyer from "./BhalukaAbout/Lawyer";
+import Lawyer_1 from "./BhalukaAbout/Lawyer_1";
 
 
 
@@ -64,7 +64,7 @@ export default function Router() {
       <Route path="/Doctors_Valukka_1" element={<Doctors_Valukka_1 />} />
       <Route path="/Ambulance_1" element={<Ambulance_1 />} />
       <Route path="/Hospitals_Bhaluka_1" element={<Hospitals_Bhaluka_1 />} />
-      <Route path="/Lawyer" element={<Lawyer />} />
+      <Route path="/Lawyer_1" element={<Lawyer_1 />} />
       
     </Routes>
   </BrowserRouter>

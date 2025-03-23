@@ -34,7 +34,7 @@ const ServiceGrid = () => {
     {
       items: [
         { name: <Link to="/UpazilaAdmin" style={{ textDecoration: 'none', color: 'inherit' }}>উপজেলা প্রশাসন</Link> },
-        { name: <Link to="/JournalistsList" style={{ textDecoration: 'none', color: 'inherit' }} >সাংবাদিকগন</Link> },
+        { name: <Link to="/Lawyer_1" style={{ textDecoration: 'none', color: 'inherit' }} >আনজীবী</Link> },
         { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link> },
       ],
     },
