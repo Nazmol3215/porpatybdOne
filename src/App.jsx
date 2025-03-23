@@ -27,8 +27,7 @@ import Doctors_Valukka_1 from "./BhalukaAbout/Doctors_Valukka_1";
 import Ambulance_1 from "./BhalukaAbout/Ambulance_1";
 import Hospitals_Bhaluka_1 from "./BhalukaAbout/Hospitals_Bhaluka_1";
 import Lawyer_1 from "./BhalukaAbout/Lawyer_1";
-
-
+import DonorList from "./BhalukaAbout/DonorCard";
 
 export default function Router() {
   return (
@@ -65,6 +64,7 @@ export default function Router() {
       <Route path="/Ambulance_1" element={<Ambulance_1 />} />
       <Route path="/Hospitals_Bhaluka_1" element={<Hospitals_Bhaluka_1 />} />
       <Route path="/Lawyer_1" element={<Lawyer_1 />} />
+      <Route path="/DonorList" element={<DonorList />} />
       
     </Routes>
   </BrowserRouter>

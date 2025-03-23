@@ -1,43 +1,87 @@
 import React from 'react';
+import fgcfh1 from "../Images/poperty1.png"; // আপনার ইমেজ ফাইল পাথ দিন
+import fgcfh2 from "../Images/i.png"; // আপনার ইমেজ ফাইল পাথ দিন
+import fgcfh3 from "../Images/im.png.webp"; // আপনার ইমেজ ফাইল পাথ দিন
+import fgcfh4 from "../Images/poperty.png"; // আপনার ইমেজ ফাইল পাথ দিন
 
 const JournalistsList = () => {
     return (
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', backgroundColor: '#f9f9f9' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '26px', color: '#333', fontWeight: 'bold' }}>
+        <div className="container py-4">
+            <h2 className="text-center mb-4">
                 সাংবাদিকদের তালিকা
             </h2>
-            <table style={{
-                width: '100%',
-                borderCollapse: 'collapse',
-                margin: 'auto',
-                maxWidth: '900px',
-                backgroundColor: '#fff',
-                borderRadius: '10px',
-                overflow: 'hidden',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-            }}>
-                <thead>
-                    <tr style={{ backgroundColor: '#f1f1f1', color: '#333', textAlign: 'center' }}>
-                        <th style={{ padding: '12px', border: '1px solid #ddd', fontWeight: '600' }}>ক্রম নং</th>
-                        <th style={{ padding: '12px', border: '1px solid #ddd', fontWeight: '600' }}>সাংবাদিকের নাম</th>
-                        <th style={{ padding: '12px', border: '1px solid #ddd', fontWeight: '600' }}>কর্মরত পত্রিকাসমূহ</th>
-                        <th style={{ padding: '12px', border: '1px solid #ddd', fontWeight: '600' }}>মোবাইল নাম্বার</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {journalists.map((journalist, index) => (
-                        <tr key={index} style={{ textAlign: 'center', color: '#555' }}>
-                            <td style={{ padding: '12px', border: '1px solid #ddd' }}>{journalist.serial}</td>
-                            <td style={{ padding: '12px', border: '1px solid #ddd' }}>{journalist.name}</td>
-                            <td style={{ padding: '12px', border: '1px solid #ddd' }}>{journalist.media}</td>
-                            <td style={{ padding: '12px', border: '1px solid #ddd' }}>{journalist.phone}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+
+            <div className="row">
+                {/* Small screens: Full width, Medium screens: List on the left */}
+                <div className="col-12 col-md-9">
+                    <table className="table table-bordered table-striped">
+                        <thead className="thead-light">
+                            <tr className="text-center">
+                                <th>ক্রম নং</th>
+                                <th>সাংবাদিকের নাম</th>
+                                <th>কর্মরত পত্রিকাসমূহ</th>
+                                <th>মোবাইল নাম্বার</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {journalists.map((journalist, index) => (
+                                <tr key={index} className="text-center">
+                                    <td>{journalist.serial}</td>
+                                    <td>{journalist.name}</td>
+                                    <td>{journalist.media}</td>
+                                    <td>{journalist.phone}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                {/* Medium screens: Four images on the right */}
+                <div className="col-md-3 d-none d-md-block">
+                    <div className="row">
+                        <div className="col-6 mb-3">
+                        <img
+                                src={fgcfh2} // দ্বিতীয় ইমেজ
+                                alt="Image 2"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    borderRadius: '8px',
+                                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                                }}
+                            />
+                        </div>
+                        <div className="col-6 mb-3">
+                            <img
+                                src={fgcfh3} // তৃতীয় ইমেজ
+                                alt="Image 3"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    borderRadius: '8px',
+                                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                                }}
+                            />
+                        </div>
+                        <div className="col-6 mb-3">
+                            <img
+                                src={fgcfh4} // চতুর্থ ইমেজ
+                                alt="Image 4"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    borderRadius: '8px',
+                                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
+
 
 const journalists = [
     { serial: '১', name: 'এম. এ জাহাঙ্গীর খান উজ্জ্বল', media: 'সমকাল', phone: '০১৯১১-৮৩১৬৩৭' },
@@ -57,7 +101,7 @@ const journalists = [
     { serial: '১৫', name: 'শাহ হায়দার আলী', media: 'দৈনিক আলোকিত বাংলাদেশ', phone: '০১৯১৩-৮৫৩৬৩৬' },
     { serial: '২৬', name: 'কামরুল হাসান পার্থ কামাল', media: 'দৈনিক ইত্তেফাক', phone: '০১৯১৩-৫৮৪০৪৮' },
     { serial: '২৭', name: 'এম.এ. শাজাহান সেলিম', media: 'দৈনিক চিঠি', phone: '০১৯১৩-১২৫৮৫৬' },
-    { serial: '২৮', name: 'মো. কামরুজ্জামান দানিশ', media: 'দৈনিক ইত্তেফাক', phone: '০১৯১১-৮৫৮০৩৬' },
+    { serial: '২৮', name: 'কামরুজ্জামান দানিশ', media: 'দৈনিক ইত্তেফাক', phone: '০১৯১১-৮৫৮০৩৬' },
     { serial: '২৯', name: 'সাব্বির রহমান শুভ্র', media: 'বাংলাদেশ সময়', phone: '০১৯১৭-৮৫৮০৩৭' },
     { serial: '৩০', name: 'এডভোকেট এস.এম. জামান', media: 'দৈনিক মযলুম সংবাদ', phone: '০১৯১৬-৮৫০৫৩৯' },
     { serial: '৩১', name: 'মো. শাহাব উদ্দিন', media: 'দৈনিক গফরগাঁও', phone: '০১৯১৯-৮৫০৫৪২' },

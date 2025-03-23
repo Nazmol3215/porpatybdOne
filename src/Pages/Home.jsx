@@ -12,7 +12,6 @@ import ServiceGrid from "../BhalukaAbout/ServiceGrid";
 
 
 
-
 export default function Home() {
   return (
     <div>
@@ -22,6 +21,7 @@ export default function Home() {
 
 
       <ServiceGrid />
+
       {/* <PropertySlider /> */}
       {/* <Neighborhoods1/> */}
       <One />

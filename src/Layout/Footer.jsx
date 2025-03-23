@@ -10,17 +10,17 @@ const Footer = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-2 mb-2">
-            <a href="https://web.facebook.com/treehousebd.official" className="btn btn-primary w-100" target="_blank" rel="noopener noreferrer">
+            <a href="https://web.facebook.com/" className="btn btn-primary w-100" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} /> Facebook
             </a>
           </div>
           <div className="col-md-2 mb-2">
-            <a href="https://wa.me/01641-131205" className="btn btn-success w-100" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/01641" className="btn btn-success w-100" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
             </a>
           </div>
           <div className="col-md-2 mb-2">
-            <a href="https://web.facebook.com/treehousebd.official" className="btn btn-danger w-100" target="_blank" rel="noopener noreferrer">
+            <a href="https://web.facebook.com/" className="btn btn-danger w-100" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faYoutube} /> YouTube
             </a>
           </div>
@@ -28,10 +28,10 @@ const Footer = () => {
         <div className="row mt-3">
           <div className="col-md-12">
             <p>
-              <FontAwesomeIcon icon={faPhone} /> <a href="tel:01641-131205" className="text-white">01641-131205</a>
+              <FontAwesomeIcon icon={faPhone} /> <a href="tel:01641-131205" className="text-white">00641-00000</a>
             </p>
             <p>
-              <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:bdtreehouse205@gmail.com" className="text-white">bdtreehouse205@gmail.com</a>
+              <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:bdtreehouse205@gmail.com" className="text-white">jdvhnurfdi@gmail.com</a>
             </p>
           </div>
         </div>
