@@ -712,13 +712,13 @@ const styles = {
       height: '70px',
     },
     name: {
-      fontSize: '18px',
+      fontSize: '13px',
       fontWeight: 'bold',
       marginBottom: '10px',
       color: '#333',
     },
     text: {
-      fontSize: '16px',
+      fontSize: '9px',
       margin: '5px 0',
     },
     bloodGroup: {
@@ -746,4 +746,4 @@ const styles = {
   };
   
 
-export default DonorList;
+export default DonorList; 

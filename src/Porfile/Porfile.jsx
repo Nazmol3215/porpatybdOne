@@ -42,7 +42,7 @@ const Profile = () => {
   };
 
   const profileNavStyle = {
-    listStyleType: 'none',
+    listStyletype : 'none',
     display: 'flex',
     justifyContent: 'center',
     gap: '20px',

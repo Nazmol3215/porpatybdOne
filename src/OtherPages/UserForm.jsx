@@ -31,7 +31,7 @@ const ContactForm = () => {
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name*</label>
             <input
-              type="text"
+              type ="text"
               name="name"
               id="name"
               value={formData.name}
@@ -43,7 +43,7 @@ const ContactForm = () => {
           <div className="mb-3">
             <label htmlFor="surname" className="form-label">Surname*</label>
             <input
-              type="text"
+              type ="text"
               name="surname"
               id="surname"
               value={formData.surname}
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 <option value="+880">+230</option>
               </select>
               <input
-                type="tel"
+                type ="tel"
                 name="phone"
                 id="phone"
                 value={formData.phone}
@@ -74,7 +74,7 @@ const ContactForm = () => {
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email*</label>
             <input
-              type="email"
+              type ="email"
               name="email"
               id="email"
               value={formData.email}
@@ -94,7 +94,7 @@ const ContactForm = () => {
               className="form-control"
             />
           </div>
-          <button type="submit" className="btn btn-teal w-100">
+          <button type ="submit" className="btn btn-teal w-100">
             Send Message
           </button>
         </form>

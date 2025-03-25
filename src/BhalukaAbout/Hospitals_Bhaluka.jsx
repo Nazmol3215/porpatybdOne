@@ -285,7 +285,7 @@ const styles = {
     fontSize: "14px",
   },
   list: {
-    listStyleType: "none",
+    listStyletype : "none",
     paddingLeft: "0",
   },
   listItem: {

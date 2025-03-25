@@ -29,6 +29,9 @@ import Hospitals_Bhaluka_1 from "./BhalukaAbout/Hospitals_Bhaluka_1";
 import Lawyer_1 from "./BhalukaAbout/Lawyer_1";
 import DonorList from "./BhalukaAbout/DonorCard";
 
+
+
+
 export default function Router() {
   return (
     <>

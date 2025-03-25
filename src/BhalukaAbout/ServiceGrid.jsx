@@ -35,12 +35,12 @@ const ServiceGrid = () => {
       items: [
         { name: <Link to="/UpazilaAdmin" style={{ textDecoration: 'none', color: 'inherit' }}>উপজেলা প্রশাসন</Link> },
         { name: <Link to="/Lawyer_1" style={{ textDecoration: 'none', color: 'inherit' }} >আনজীবী</Link> },
-        { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link> },
+        { name: <Link to="/DonorList" style={{ textDecoration: 'none', color: 'inherit' }} >ব্লাড ডোনার</Link> },
       ],
     },
     {
       items: [
-        { name: <Link to="/UpazilaAdmin" style={{ textDecoration: 'none', color: 'inherit' }}>উপজেলা প্রশাসন</Link> },
+        { name: <Link to="/CardGrid" style={{ textDecoration: 'none', color: 'inherit' }}>সকল মিস্ত্রী</Link> },
         { name: <Link to="/JournalistsList_1" style={{ textDecoration: 'none', color: 'inherit' }} >সাংবাদিকগন</Link> },
         { name: <Link to="/Famous_person" style={{ textDecoration: 'none', color: 'inherit' }} >প্রসিদ্ধ ব্যক্তি</Link> },
       ],
